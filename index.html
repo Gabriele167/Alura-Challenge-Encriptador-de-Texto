@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+  <title>Encriptador de Texto</title>
+
+  <link rel="stylesheet" href="/style/style.css">
+
+</head>
+<body>
+  <header>
+    <a class="logo-alura" href="https://www.youtube.com/watch?v=DR195U6t-g0">
+    <img src="./style/Logo.png" alt="Logo Alura"> </a>
+  </header>
+  <main>
+    <form class="form-section">
+    <textarea class="form-input" name="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+    <div class="container">
+     <div class="btn-container">
+      <div class="alerta">
+        <img src="./style/bi_exclamation-circle-fill.png"><span>Solo letras minúsculas y sin acento</span></div>
+     </div>
+      <div class="submit-container">
+       <input class="form-btn" type="submit" value="Encriptar">
+       <input class="form-btn2" type="submit" value="Desencriptar">
+      </div>
+     </div> 
+    </form>
+  <aside class="result">
+    <img src="./style/Muñeco.png" alt="Muñeco de busqueda" class="imagen-resultado">
+    <div class="result-container">
+      <h3 class="result-titulo">Ningún mensaje fue<br>encontrado</h3>
+      <p class="result-text">Ingresa el texto que deseas encriptar o <br> desencriptar</p>
+      <button class="form-btn form-btn2 hidden">Copiar</button>
+    </div>
+  </aside>
+  </main>
+    <script src="encriptador.js"></script>
+</body>
+</html>

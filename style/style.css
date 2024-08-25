@@ -1,0 +1,139 @@
+:root{
+    --azul: #0a3871;
+    --azul2: #d8dfe8;
+    --inter: font-family: 'Inter', sans-serif;
+    --main-color: #f3f5fc;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--main-color);
+    font-family: var(--inter);
+}
+header{
+    margin-bottom: 5rem;
+    width: 55%;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+}
+header img{
+    width: 120px;
+    height: 48px;
+}
+.form-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80dvh;
+}
+.form-input{
+    width: 100%;
+    max-width:577px;
+    height: 64dvh;
+    border: none;
+    background-color: #f3f5fc;
+    outline: none;
+    font-family: var(--inter);
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+    color: var(--azul);
+    overflow: auto;
+}
+::placeholder{
+    font-size: 3.2rem;
+    color: var(--azul);
+}
+.alerta{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.submit-container{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.form-btn{
+    background-color: var(--azul);
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1 px solid var(--azul);
+}
+.form-btn2{
+    background-color: transparent;
+    color: var(--azul);
+    font-size: 1.6rem;
+    padding: 1rem;
+    width: 328px;
+    height: 67px;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+}
+.result{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95dvh;
+    border-radius: 32px;
+    max-width: 35rem;
+    width: 100%;
+    margin-top: -9rem;
+}
+.result-titulo{
+    font-family: var(--inter);
+    font-size: 24px;
+    text-align: center;
+}
+.result-text{
+    font-family: var(--inter);
+    font-size: 16px;
+    text-align: center;
+}
+.imagen-resultado{
+    display: block;
+}
+.result-text-modified {
+    font-family: var(--inter);
+    font-size: 3.2rem;
+    color: #495057;
+    background-color: transparent;
+    text-align: left;
+}
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    main{
+        flex-direction: column;
+    }
+    .submit-container{
+        justify-content: center;
+    }
+    .result{
+        height: auto;
+        max-width: 670px;
+        margin-top: 2rem;
+        min-height: 180px;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagen-resultado{
+        display: none;
+    }
+    
+
+}
